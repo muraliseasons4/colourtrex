@@ -101,7 +101,7 @@ function draw() {
     trex.velocityY = trex.velocityY + 0.8
   
     if (ground.x < 0){
-      ground.x = ground.width/2;
+      ground.x = ground.width/4;
     }
   
     trex.collide(invisibleGround);
@@ -136,6 +136,8 @@ function draw() {
     }
   }
   
+  camera.position.x=trex.x;
+  camera.position.y=trex.y;
   
   drawSprites();
 }
